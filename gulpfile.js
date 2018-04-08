@@ -22,7 +22,7 @@ gulp.task('build', function () {
 });
 
 gulp.task('buildHtml', function () {
-  gulp.src(sourceHtml + '*.html')
+  gulp.src(sourceHtml + '/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(destinationHtml))
 });
@@ -34,7 +34,8 @@ gulp.task('minify-css',() => {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(sourceCss + '/*.scss', ['build', 'buildHtml']);
+  gulp.watch(sourceCss + '/*.scss', ['build']);
+  gulp.watch(sourceHtml + '/*.html', ['buildHtml']);
 });
 
 // Default gulp task to run
