@@ -5,9 +5,12 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "npm-run-all": "^4.1.2"
   },
   "scripts": {
-    "start": "node ./server/server.js && gulp watch"
+    "launch-app": "node ./server/server.js",
+    "gulp-watch": "gulp watch",
+    "watch": "npm-run-all --parallel launch-app gulp-watch"
   }
 }

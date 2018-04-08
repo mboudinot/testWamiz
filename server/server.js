@@ -16,6 +16,6 @@ var server = app.listen(1337, function () {
 
     console.log(colors.green("  Server running on port ") + colors.red(port) + "\n");
 
-    app.use(express.static(path.join(__dirname, '../')))
+    app.use(express.static(path.join(__dirname, '../public/')))
 
 });
