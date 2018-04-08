@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
+:root {
+  --Font--muli: 'Muli', sans-serif; }
+
+/* Commons styles */
+html {
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  font-family: var(--Font--muli);
+  background: red; }

@@ -1,0 +1,18 @@
+@import "_fontfamily";
+
+/* Commons styles */
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--Font--muli);
+  background: red;
+}

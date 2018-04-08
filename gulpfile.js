@@ -17,7 +17,6 @@ gulp.task('build', function () {
   gulp.src(sourceCss + '/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(cleanCSS())
     .pipe(gulp.dest(destinationCss));
 });
 
