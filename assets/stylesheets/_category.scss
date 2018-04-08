@@ -1,0 +1,21 @@
+.category {
+  @extend .header;
+  margin-top: (56 / 16) * 1rem;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.category-header-title {
+  font-size: (32 / 16) * 1rem;
+  font-weight: $font-semi-bold;
+  margin: 0;
+}
+
+.category-header-subtitle {
+  font-size: (16 / 16) * 1rem;
+  font-weight: $font-semi-bold;
+}

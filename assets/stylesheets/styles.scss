@@ -1,8 +1,5 @@
 @import "_googlefont";
 @import "_colors";
-@import "_header";
-@import "_search";
-@import "_breadcrumb";
 
 /* Commons styles */
 
@@ -27,15 +24,26 @@ body {
   box-sizing: inherit;
 }
 
-.link {
-  color: $color-pink;
+.link,
+.link-title {
+  cursor: pointer;
   text-decoration: none;
 }
 
-.link:hover {
-  text-decoration: underline;
+.link {
+  color: $color-pink;
 }
 
 .link-title {
-  color: $color-main;
+  color: inherit;
 }
+
+.link:hover,
+.link-title:hover {
+  text-decoration: underline;
+}
+
+@import "_header";
+@import "_search";
+@import "_breadcrumb";
+@import "_category";
