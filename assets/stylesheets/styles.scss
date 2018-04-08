@@ -1,12 +1,14 @@
 @import "_googlefont";
 @import "_colors";
-@import "_breadcrumb";
 @import "_header";
+@import "_search";
+@import "_breadcrumb";
 
 /* Commons styles */
 
 :root {
   font-family: $font-muli;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {

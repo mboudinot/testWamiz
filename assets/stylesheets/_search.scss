@@ -1,0 +1,74 @@
+@import "_mixins.scss";
+
+.search {
+  text-align: center;
+  @include background-2x( 'img_header', 'png', cover, top center);
+}
+
+.search-title,
+.search-subtitle {
+  color: $color-white;
+  text-shadow: 0 0 19px #4d7989;
+}
+
+.search-title {
+  font-size: (42 / 16) * 1rem;
+  font-weight: $font-bold;
+  width: (853 / 16) * 1rem;
+  margin: 0 auto;
+  padding: (42 / 16) * 1rem 0 0;
+  line-height: 1.0714285714285714;
+}
+
+.search-subtitle {
+  font-size: (24 / 16) * 1rem;
+  font-weight: $font-bold;
+  margin: (11 /16) * 1rem 0 0;
+  line-height: 1.875;
+}
+
+.search-formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: (483 / 16) * 1rem;
+  margin: 0 auto;
+  padding: 0 0 (42 / 16) * 1rem;
+}
+
+.search-form {
+  margin: (19 / 16) * 1rem 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input--text {
+  height: 59px;
+  width: 413px;
+  border: none;
+  border-radius: .2rem 0 0 .2rem;
+  font-size: (18 / 16) * 1rem;
+  font-weight: $font-bold;
+  color: $color-grey-placeholder;
+  padding: (12 / 16) * 1rem 0 (16 / 16) * 1rem (19 /  16) * 1rem;
+}
+
+.search-buttonContainer {
+  display: flex;
+}
+
+.search-button-valid {
+  width: (69 / 16) * 1rem;
+  border: none;
+  color: $color-white;
+  background: $color-pink url("../images/svg/ic_loupe.svg") center center no-repeat;
+  cursor: pointer;
+  border-radius: 0 .2rem .2rem 0;
+}
+
+.search-examples {
+  font-size: (14 / 16) * 1rem;
+  font-weight: $font-black;
+  line-height: 2.2;
+  color: $color-white;
+  text-shadow: 0 0 2px rgba(42, 146, 176, 0.5);
+}

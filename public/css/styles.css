@@ -2,11 +2,6 @@
 /* ===========================
 COLORS
 =========================== */
-.breadcrumb {
-  font-family: "Muli", sans-serif;
-  font-weight: 600;
-  font-size: 1.3125rem; }
-
 .header {
   width: 1170px;
   margin: 0 auto; }
@@ -74,9 +69,87 @@ COLORS
   font-size: 1.1875rem;
   color: #797979; }
 
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+.search {
+  text-align: center;
+  background-image: url("../images/@1x/img_header.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .search {
+      background-image: url("../images/@2X/img_header@2x.png"); } }
+
+.search-title,
+.search-subtitle {
+  color: #fff;
+  text-shadow: 0 0 19px #4d7989; }
+
+.search-title {
+  font-size: 2.625rem;
+  font-weight: 700;
+  width: 53.3125rem;
+  margin: 0 auto;
+  padding: 2.625rem 0 0;
+  line-height: 1.0714285714285714; }
+
+.search-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.6875rem 0 0;
+  line-height: 1.875; }
+
+.search-formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30.1875rem;
+  margin: 0 auto;
+  padding: 0 0 2.625rem; }
+
+.search-form {
+  margin: 1.1875rem 0 0;
+  display: flex;
+  justify-content: center; }
+
+.search-input--text {
+  height: 59px;
+  width: 413px;
+  border: none;
+  border-radius: .2rem 0 0 .2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #A4A4A4;
+  padding: 0.75rem 0 1rem 1.1875rem; }
+
+.search-buttonContainer {
+  display: flex; }
+
+.search-button-valid {
+  width: 4.3125rem;
+  border: none;
+  color: #fff;
+  background: #F06373 url("../images/svg/ic_loupe.svg") center center no-repeat;
+  cursor: pointer;
+  border-radius: 0 .2rem .2rem 0; }
+
+.search-examples {
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 2.2;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(42, 146, 176, 0.5); }
+
+.breadcrumb {
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  font-size: 1.3125rem; }
+
 /* Commons styles */
 :root {
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 html {
   box-sizing: border-box;
