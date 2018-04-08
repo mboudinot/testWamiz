@@ -1,3 +1,40 @@
+.header {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 (39 / 16) * 1rem;
+}
+
+.signIn,
+.signUp {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  color: $color-pink;
+  font-size: (20 / 16) * 1rem;
+  cursor: pointer;
+}
+
+.signIn {
+  font-weight: $font-semi-bold;
+}
+
+.signUp {
+  font-weight: $font-black;
+  margin-left: (28 / 16) * 1rem;
+}
+
+.signIn:hover,
+.signUp:hover {
+  text-decoration: underline;
+}
+
 .title-h1 {
   font-weight: $font-semi-bold;
   font-size: (41 / 16) * 1rem;

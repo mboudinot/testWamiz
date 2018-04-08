@@ -10,8 +10,19 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="title-h1--testsPage">
-    titre de page de test
-  </div>
+  <header class="header">
+    <section class="header-section">
+        <picture class="logo">
+            <source srcset="./images/@1x/img_mobile_logo.png, ./images/@2X/img_mobile_logo@2x.png 2x" media="(max-width: 600px)">
+            <source srcset="./images/@1x/logo_consoanimo.png, ./images/@2X/logo_consoanimo@2x.png 2x">
+            <img srcset="./images/@1x/logo_consoanimo.png, ./images/@2X/logo_consoanimo@2x.png 2x" alt="Logo - Consoanimo">
+        </picture>
+        <div class="header-connection">
+          <button class="signIn">Se connecter</button>
+          <button class="signUp">S'inscrire</button>
+        </div>
+    </section>
+  </header>
+  <section class="search"></section>
 </body>
 </html>

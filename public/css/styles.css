@@ -7,6 +7,39 @@ COLORS
   font-weight: 600;
   font-size: 1.3125rem; }
 
+.header {
+  width: 1170px;
+  margin: 0 auto; }
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 2.4375rem; }
+
+.signIn,
+.signUp {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  color: #F06373;
+  font-size: 1.25rem;
+  cursor: pointer; }
+
+.signIn {
+  font-weight: 600; }
+
+.signUp {
+  font-weight: 900;
+  margin-left: 1.75rem; }
+
+.signIn:hover,
+.signUp:hover {
+  text-decoration: underline; }
+
 .title-h1 {
   font-weight: 600;
   font-size: 2.5625rem; }
@@ -48,6 +81,10 @@ COLORS
 html {
   box-sizing: border-box;
   overflow-x: hidden; }
+
+body {
+  padding: 0;
+  margin: 0; }
 
 *,
 *::before,
