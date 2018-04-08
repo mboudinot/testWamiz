@@ -1,6 +1,14 @@
-@import "_fontfamily";
+@import "_googlefont";
+@import "_colors";
+@import "_breadcrumb";
+@import "_header";
 
 /* Commons styles */
+
+:root {
+  font-family: $font-muli;
+}
+
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -12,7 +20,15 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-family: var(--Font--muli);
-  background: red;
+.link {
+  color: $color-pink;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link-title {
+  color: $color-main;
 }

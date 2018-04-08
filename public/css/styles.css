@@ -1,8 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
-:root {
-  --Font--muli: 'Muli', sans-serif; }
+/* ===========================
+COLORS
+=========================== */
+.breadcrumb {
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+  font-size: 1.3125rem; }
+
+.title-h1 {
+  font-weight: 600;
+  font-size: 2.5625rem; }
+
+.title-h1--testsPage {
+  font-weight: 700;
+  font-size: 2.3125rem;
+  color: #17B3B4; }
+
+.title-h1--productPage {
+  font-weight: 600;
+  font-size: 2.3125rem; }
+
+.title-h2 {
+  font-weight: 600;
+  font-size: 2rem; }
+
+.title-h3 {
+  font-weight: 700;
+  font-size: 1.8125rem; }
+
+.title-h4 {
+  font-weight: 600;
+  font-size: 1.5625rem; }
+
+.title-h5 {
+  font-weight: 700;
+  font-size: 1.375rem; }
+
+.title-h6 {
+  font-weight: 700;
+  font-size: 1.1875rem;
+  color: #797979; }
 
 /* Commons styles */
+:root {
+  font-family: "Muli", sans-serif; }
+
 html {
   box-sizing: border-box;
   overflow-x: hidden; }
@@ -12,6 +54,12 @@ html {
 *::after {
   box-sizing: inherit; }
 
-body {
-  font-family: var(--Font--muli);
-  background: red; }
+.link {
+  color: #F06373;
+  text-decoration: none; }
+
+.link:hover {
+  text-decoration: underline; }
+
+.link-title {
+  color: #484848; }

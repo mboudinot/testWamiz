@@ -1,0 +1,41 @@
+.title-h1 {
+  font-weight: $font-semi-bold;
+  font-size: (41 / 16) * 1rem;
+}
+
+.title-h1--testsPage {
+  font-weight: $font-bold;
+  font-size: (37 / 16) * 1rem;
+  color: $color-turquoise;
+}
+
+.title-h1--productPage {
+  font-weight: $font-semi-bold;
+  font-size: (37 / 16) * 1rem;
+}
+
+.title-h2 {
+  font-weight: $font-semi-bold;
+  font-size: (32 / 16) * 1rem;
+}
+
+.title-h3 {
+  font-weight: $font-bold;
+  font-size: (29 / 16) * 1rem;
+}
+
+.title-h4 {
+  font-weight: $font-semi-bold;
+  font-size: (25 / 16) * 1rem;
+}
+
+.title-h5 {
+  font-weight: $font-bold;
+  font-size: (22 / 16) * 1rem;
+}
+
+.title-h6 {
+  font-weight: $font-bold;
+  font-size: (19 / 16) * 1rem;
+  color: $color-grey--title;
+}
