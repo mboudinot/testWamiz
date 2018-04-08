@@ -1,0 +1,70 @@
+.slideshowContainer {
+  position: relative;
+  @extend .header;
+}
+
+.slideshow {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slideshow-itemContainer {
+  display: flex;
+  transition: all 2s ease-in-out;
+  transform: translateX(-100px);
+}
+
+.slideshow-item {
+  flex-shrink: 0;
+  border: 1px solid $color-grey-slideshow;
+  width: (570 / 16) * 1rem;
+  height: (244 / 16) * 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slideshow-item + .slideshow-item {
+  margin-left: (30 / 16) * 1rem;
+}
+
+.slideshowItem-reviews {
+  align-self: stretch;
+  margin: (30 / 16) * 1rem 0 0;
+  width: (400 / 16) * 1rem;
+}
+
+.reviews-score-item {
+  margin-right: (6 / 16) * 1rem;
+}
+
+.reviews-reviewer {
+  margin: (9 / 16) * 1rem 0 0;
+  font-size: (17 / 16) * 1rem;
+  font-weight: $font-semi-bold;
+  color: $color-grey--darker;
+}
+
+.reviews-product {
+  margin: (18 / 16) * 1rem 0 0;
+  font-size: (21 / 16) * 1rem;
+  font-weight: $font-semi-bold;
+}
+
+.reviews-descriptive {
+  font-size: (17 / 16) * 1rem;
+  font-weight: $font-semi-bold;
+  line-height: 1.5;
+  color: $color-grey--title;
+}
+
+.slideshow-arrow--next {
+  position: absolute;
+  right: (-36.8 / 16) * 1rem;
+  top: (107.2 / 16) * 1rem;
+  border: solid $color-black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 13px;
+  transform: rotate(-45deg);
+}
