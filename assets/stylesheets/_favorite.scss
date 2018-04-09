@@ -1,0 +1,52 @@
+@import "_mixins.scss";
+
+.favorite {
+  @extend .header;
+}
+
+.favorite-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.favorite-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: (370 / 16) * 1rem;
+  height: (186 / 16) * 1rem;
+  border: 1px solid $color-black;
+  margin-bottom: (30 / 16) * 1rem;
+}
+
+.favorite-item--food {
+  @include background-2x( 'img_categorie_alimentation', 'png', left bottom, no-repeat, 150px, 171px);
+}
+
+.favorite-item--leash {
+  @include background-2x( 'img_categorie_laisses', 'png', left bottom, no-repeat, 179px, 171px);
+}
+
+.favorite-item--litter {
+  @include background-2x( 'img_categorie_maison', 'png', left bottom, no-repeat, 180px, 178px);
+}
+
+.favorite-item--sleeping {
+  @include background-2x( 'img_categorie_couchages', 'png', left bottom, no-repeat, 213px, 173px);
+}
+
+.favorite-item--door {
+  @include background-2x( 'img_categorie_portes', 'png', left bottom, no-repeat, 203px, 183px);
+}
+
+.favorite-item--treats {
+  @include background-2x( 'img_categorie_friandises', 'png', left bottom, no-repeat, 193px, 160px);
+}
+
+.favorite-title {
+  font-size: (20 / 16) * 1rem;
+  width: (175 / 16) * 1rem;
+  font-weight: $font-bold;
+  margin-right: (15 / 16) * 1rem;
+}

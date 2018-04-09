@@ -35,7 +35,7 @@ body {
 .link-title:hover {
   text-decoration: underline; }
 
-.header, .category, .slideshowContainer {
+.header, .category, .slideshowContainer, .favorite {
   width: 1170px;
   margin: 0 auto; }
 
@@ -108,12 +108,12 @@ body {
 .search {
   text-align: center;
   background-image: url("../images/@1x/img_header.png");
-  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     .search {
-      background-image: url("../images/@2X/img_header@2x.png"); } }
+      background-image: url("../images/@2X/img_header@2x.png");
+      background-size: 1920px 342px; } }
 
 .search-title,
 .search-subtitle {
@@ -270,3 +270,80 @@ body {
 
 .slideshow-button--hidden {
   display: none; }
+
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+.favorite-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.favorite-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 23.125rem;
+  height: 11.625rem;
+  border: 1px solid #000;
+  margin-bottom: 1.875rem; }
+
+.favorite-item--food {
+  background-image: url("../images/@1x/img_categorie_alimentation.png");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .favorite-item--food {
+      background-image: url("../images/@2X/img_categorie_alimentation@2x.png");
+      background-size: 150px 171px; } }
+
+.favorite-item--leash {
+  background-image: url("../images/@1x/img_categorie_laisses.png");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .favorite-item--leash {
+      background-image: url("../images/@2X/img_categorie_laisses@2x.png");
+      background-size: 179px 171px; } }
+
+.favorite-item--litter {
+  background-image: url("../images/@1x/img_categorie_maison.png");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .favorite-item--litter {
+      background-image: url("../images/@2X/img_categorie_maison@2x.png");
+      background-size: 180px 178px; } }
+
+.favorite-item--sleeping {
+  background-image: url("../images/@1x/img_categorie_couchages.png");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .favorite-item--sleeping {
+      background-image: url("../images/@2X/img_categorie_couchages@2x.png");
+      background-size: 213px 173px; } }
+
+.favorite-item--door {
+  background-image: url("../images/@1x/img_categorie_portes.png");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .favorite-item--door {
+      background-image: url("../images/@2X/img_categorie_portes@2x.png");
+      background-size: 203px 183px; } }
+
+.favorite-item--treats {
+  background-image: url("../images/@1x/img_categorie_friandises.png");
+  background-position: left bottom;
+  background-repeat: no-repeat; }
+  @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+    .favorite-item--treats {
+      background-image: url("../images/@2X/img_categorie_friandises@2x.png");
+      background-size: 193px 160px; } }
+
+.favorite-title {
+  font-size: 1.25rem;
+  width: 10.9375rem;
+  font-weight: 700;
+  margin-right: 0.9375rem; }

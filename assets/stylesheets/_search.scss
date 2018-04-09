@@ -2,7 +2,7 @@
 
 .search {
   text-align: center;
-  @include background-2x( 'img_header', 'png', cover, top center);
+  @include background-2x( 'img_header', 'png', top center, no-repeat, 1920px, 342px);
 }
 
 .search-title,
