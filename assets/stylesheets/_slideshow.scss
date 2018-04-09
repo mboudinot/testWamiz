@@ -10,8 +10,7 @@
 
 .slideshow-itemContainer {
   display: flex;
-  transition: all 2s ease-in-out;
-  transform: translateX(-100px);
+  transition: all .5s ease-in-out;
 }
 
 .slideshow-item {
@@ -58,13 +57,31 @@
   color: $color-grey--title;
 }
 
-.slideshow-arrow--next {
+.slideshow-arrow--next,
+.slideshow-arrow--prev {
   position: absolute;
-  right: (-36.8 / 16) * 1rem;
   top: (107.2 / 16) * 1rem;
   border: solid $color-black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 13px;
+  cursor: pointer;
+}
+.slideshow-arrow--next:hover,
+.slideshow-arrow--prev:hover {
+  border-color: $color-grey--medium;
+}
+
+.slideshow-arrow--next {
+  right: (-36.8 / 16) * 1rem;
   transform: rotate(-45deg);
+}
+
+.slideshow-arrow--prev {
+  left: (-36.8 / 16) * 1rem;
+  transform: rotate(135deg);
+}
+
+.slideshow-button--hidden {
+  display: none;
 }
