@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) {
+  .search,
+  .header-connection,
+  .slideshow-arrow--next {
+    display: none;
+  }
+
+  .header,
+  .category,
+  .slideshowContainer,
+  .favorite,
+  .footer {
+    width: 100%;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid $color-grey--medium;
+    padding: (15 / 16) * 1rem 0;
+  }
+
+  .header-burgerMenu,
+  .header-searchLogo {
+    display: block;
+  }
+
+  .category--reviews {
+    padding: (33 / 16) * 1rem (13 / 16) * 1rem (11 / 16) * 1rem (20 / 16) * 1rem;
+    margin: 0;
+  }
+
+  .category-header-title {
+    font-size: (18 / 16) * 1rem;
+  }
+
+  .slideshowContainer {
+    padding-left: (20 / 16) * 1rem;
+  }
+
+  .slideshow {
+    overflow-x: auto;
+  }
+
+  .slideshow-item {
+    width: (211 / 16) * 1rem;
+    height: auto;
+  }
+}

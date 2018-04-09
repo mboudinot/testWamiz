@@ -10,6 +10,11 @@
   padding: 1rem 0 (39 / 16) * 1rem;
 }
 
+.header-burgerMenu,
+.header-searchLogo {
+  display: none;
+}
+
 .signIn,
 .signUp {
   appearance: none;
