@@ -1,0 +1,50 @@
+.footer {
+  background-image: linear-gradient(to left, #82d5ef, #57b8bb 100%);
+  text-align: center;
+  color: $color-white;
+  padding: (42 / 16) * 1rem 0 (69 / 16) * 1rem;
+}
+
+.footer-title {
+  font-size: (21 / 16) * 1rem;
+  font-weight: $font-bold;
+}
+
+.footer-subtitle {
+  font-size: (23 / 16) * 1rem;
+  font-weight: $font-bold;
+  line-height: 2;
+  margin: 0;
+}
+
+.footer-copyright {
+  font-size: (14 / 16) * 1rem;
+  font-weight: $font-bold;
+  margin: 0;
+}
+
+.footer-socialNetwork {
+  margin: (36 /16) * 1rem 0 (39 / 16) * 1rem;
+}
+
+.footer-socialNetwork--facebook {
+  margin-right: (27 / 16) * 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: (13 / 16) * 1rem;
+  font-weight: $font-bold;
+  margin: 0;
+}
+
+.footer-listItem:not(:last-child) {
+  padding-right: (8 / 16) * 1rem;
+}
+
+.footer-listItem:not(:last-child):after {
+  content: "-";
+  margin-left: (8 / 16) * 1rem;
+}
