@@ -24,6 +24,12 @@ body {
   box-sizing: inherit;
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 .link,
 .link-title {
   cursor: pointer;

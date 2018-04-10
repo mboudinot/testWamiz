@@ -116,10 +116,13 @@
 
   .favorite-item {
     flex-shrink: 0;
-    width: (353 / 16) * 1rem;
-    height: (117 / 16) * 1rem;
     background-size: contain;
     margin-right: (21 / 16) * 1rem;
+  }
+
+  .favorite-item-link {
+    width: (353 / 16) * 1rem;
+    height: (117 / 16) * 1rem;
   }
 
   .footer {
@@ -147,8 +150,4 @@
   .footer-listItem.footer-listItem--contactUs:before {
     content: "";
   }
-
-  // .footer-listItem:last-child:before {
-  //   content: "f";
-  // }
 }

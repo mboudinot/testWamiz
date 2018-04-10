@@ -20,6 +20,11 @@ body {
 *::after {
   box-sizing: inherit; }
 
+ul,
+li {
+  margin: 0;
+  padding: 0; }
+
 .link,
 .link-title {
   cursor: pointer;
@@ -281,17 +286,25 @@ body {
 .favorite-items {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  list-style: none; }
 
 .favorite-item {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 23.125rem;
-  height: 11.625rem;
   border: 1px solid #E5E5E5;
   margin-bottom: 1.875rem;
   border-radius: .2rem; }
+
+.favorite-item-link {
+  width: 23.125rem;
+  height: 11.625rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: inherit;
+  text-decoration: none; }
+
+.favorite-item:hover {
+  border: 1px solid #858585; }
 
 .favorite-item--food {
   background-image: url("../images/@1x/img_categorie_alimentation.png");
@@ -475,10 +488,11 @@ body {
     flex-wrap: nowrap; }
   .favorite-item {
     flex-shrink: 0;
-    width: 22.0625rem;
-    height: 7.3125rem;
     background-size: contain;
     margin-right: 1.3125rem; }
+  .favorite-item-link {
+    width: 22.0625rem;
+    height: 7.3125rem; }
   .footer {
     padding: 1.25rem 0; }
   .footer-title,

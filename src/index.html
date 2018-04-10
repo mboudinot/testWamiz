@@ -8,7 +8,7 @@
   <meta name="keywords" content="animaux, animal, animal de compagnie, animal domestique, animalier, chien, chat, rongeur, photos d'animaux, vidéos d'animaux">
   <title>Animaux, chiens, chats, rongeurs : le site des animaux de compagnie - Wamiz</title>
   <script src="./js/main.js"></script>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <header class="header">
@@ -19,7 +19,7 @@
             <source srcset="./images/@1x/logo_consoanimo.png, ./images/@2X/logo_consoanimo@2x.png 2x">
             <img srcset="./images/@1x/logo_consoanimo.png, ./images/@2X/logo_consoanimo@2x.png 2x" alt="Logo - Consoanimo">
         </picture>
-        <img src="images/svg/ic_mobile_loupe.svg" alt="Search">
+        <img class="header-searchLogo" src="images/svg/ic_mobile_loupe.svg" alt="Search">
         <div class="header-connection">
           <button class="signIn">Se connecter</button>
           <button class="signUp">S'inscrire</button>
@@ -50,13 +50,13 @@
 
   <section class="slideshowContainer">
     <div class="slideshow">
-      <div class="slideshow-itemContainer">
-        <div class="slideshow-item">
+      <ul class="slideshow-itemContainer">
+        <li class="slideshow-item">
           <picture class="slideshowItem-logo">
             <source srcset="./images/@1x/img_avis_frolic.png, ./images/@2X/img_avis_frolic@2x.png 2x">
             <img srcset="./images/@1x/img_avis_frolic.png, ./images/@2X/img_avis_frolic@2x.png 2x" alt="Avis - Frolic complete">
           </picture>
-          <div class="slideshowItem-reviews">
+          <article class="slideshowItem-reviews">
             <div class="reviews-score">
               <picture class="reviews-score-item">
                 <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
@@ -80,17 +80,17 @@
               </picture>
             </div>
             <div class="reviews-reviewer">Margaux, le 26 juillet 2017</div>
-            <div class="reviews-product">Frolic Complete</div>
+            <h2 class="reviews-product">Frolic Complete</h2>
             <div class="reviews-descriptive">Je mets du Frolic dans les croquettes Royal Canin de mes chiens comme on mettrait des friandises. Ils adorent ça Mais je n'en mets...</div>
-          </div>
-        </div>
+          </article>
+        </li>
 
-        <div class="slideshow-item">
+        <li class="slideshow-item">
           <picture class="slideshowItem-logo">
             <source srcset="./images/@1x/ilg_avis_balle.png, ./images/@2X/ilg_avis_balle@2x.png 2x">
             <img srcset="./images/@1x/ilg_avis_balle.png, ./images/@2X/ilg_avis_balle@2x.png 2x" alt="Avis - Balle à friandises Boome">
           </picture>
-          <div class="slideshowItem-reviews">
+          <article class="slideshowItem-reviews">
             <div class="reviews-score">
               <picture class="reviews-score-item">
                 <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
@@ -114,17 +114,17 @@
               </picture>
             </div>
             <div class="reviews-reviewer">Anais, le 26 mai 2017</div>
-            <div class="reviews-product">Balle à friandises Boome</div>
+            <h2 class="reviews-product">Balle à friandises Boome</h2>
             <div class="reviews-descriptive">La Balle très résistante cella occupe bien mon chiot cependant le labyrinthe et un peu juste les croquette sorte trop ...</div>
-          </div>
-        </div>
+          </article>
+        </li>
 
-        <div class="slideshow-item">
+        <li class="slideshow-item">
           <picture class="slideshowItem-logo">
             <source srcset="./images/@1x/img_avis_frolic.png, ./images/@2X/img_avis_frolic@2x.png 2x">
             <img srcset="./images/@1x/img_avis_frolic.png, ./images/@2X/img_avis_frolic@2x.png 2x" alt="Avis - Frolic complete">
           </picture>
-          <div class="slideshowItem-reviews">
+          <article class="slideshowItem-reviews">
             <div class="reviews-score">
               <picture class="reviews-score-item">
                 <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
@@ -148,45 +148,45 @@
               </picture>
             </div>
             <div class="reviews-reviewer">Margaux, le 26 juillet 2017</div>
-            <div class="reviews-product">Frolic Complete</div>
+            <h2 class="reviews-product">Frolic Complete</h2>
             <div class="reviews-descriptive">Je mets du Frolic dans les croquettes Royal Canin de mes chiens comme on mettrait des friandises. Ils adorent ça Mais je n'en mets...</div>
-          </div>
-        </div>
+          </article>
+        </li>
 
-        <div class="slideshow-item">
-            <picture class="slideshowItem-logo">
-              <source srcset="./images/@1x/ilg_avis_balle.png, ./images/@2X/ilg_avis_balle@2x.png 2x">
-              <img srcset="./images/@1x/ilg_avis_balle.png, ./images/@2X/ilg_avis_balle@2x.png 2x" alt="Avis - Balle à friandises Boome">
-            </picture>
-            <div class="slideshowItem-reviews">
-              <div class="reviews-score">
-                <picture class="reviews-score-item">
-                  <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
-                  <img srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x" alt="Logo - Consoanimo">
-                </picture>
-                <picture class="reviews-score-item">
-                  <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
-                  <img srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x" alt="Logo - Consoanimo">
-                </picture>
-                <picture class="reviews-score-item">
-                  <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
-                  <img srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x" alt="Logo - Consoanimo">
-                </picture>
-                <picture class="reviews-score-item">
-                  <source srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x">
-                  <img srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x" alt="Logo - Consoanimo">
-                </picture>
-                <picture class="reviews-score-item">
-                  <source srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x">
-                  <img srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x" alt="Logo - Consoanimo">
-                </picture>
-              </div>
-              <div class="reviews-reviewer">Anais, le 26 mai 2017</div>
-              <div class="reviews-product">Balle à friandises Boome</div>
-              <div class="reviews-descriptive">La Balle très résistatnte cella occupe bien mon chiot cependant le labyrinthe et un peu juste les croquette sorte trop ...</div>
+        <li class="slideshow-item">
+          <picture class="slideshowItem-logo">
+            <source srcset="./images/@1x/ilg_avis_balle.png, ./images/@2X/ilg_avis_balle@2x.png 2x">
+            <img srcset="./images/@1x/ilg_avis_balle.png, ./images/@2X/ilg_avis_balle@2x.png 2x" alt="Avis - Balle à friandises Boome">
+          </picture>
+          <article class="slideshowItem-reviews">
+            <div class="reviews-score">
+              <picture class="reviews-score-item">
+                <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
+                <img srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x" alt="Logo - Consoanimo">
+              </picture>
+              <picture class="reviews-score-item">
+                <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
+                <img srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x" alt="Logo - Consoanimo">
+              </picture>
+              <picture class="reviews-score-item">
+                <source srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x">
+                <img srcset="./images/@1x/img_pattes_jaune.png, ./images/@2X/img_pattes_jaune@2x.png 2x" alt="Logo - Consoanimo">
+              </picture>
+              <picture class="reviews-score-item">
+                <source srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x">
+                <img srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x" alt="Logo - Consoanimo">
+              </picture>
+              <picture class="reviews-score-item">
+                <source srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x">
+                <img srcset="./images/@1x/img_pattes_grise.png, ./images/@2X/img_pattes_grise@2x.png 2x" alt="Logo - Consoanimo">
+              </picture>
             </div>
-          </div>
-      </div>
+            <div class="reviews-reviewer">Anais, le 26 mai 2017</div>
+            <h2 class="reviews-product">Balle à friandises Boome</h2>
+            <div class="reviews-descriptive">La Balle très résistatnte cella occupe bien mon chiot cependant le labyrinthe et un peu juste les croquette sorte trop ...</div>
+          </article>
+        </li>
+      </ul>
     </div>
     <div class="js-button-prev slideshow-arrow--prev slideshow-button--hidden"></div>
     <div class="js-button-next slideshow-arrow--next"></div>
@@ -200,26 +200,26 @@
   </section>
 
   <section class="favorite">
-    <div class="favorite-items">
-      <div class="favorite-item favorite-item--food">
-        <div class="favorite-title">Alimentation</div>
-      </div>
-      <div class="favorite-item favorite-item--leash">
-        <div class="favorite-title">Colliers, laisses et harnais</div>
-      </div>
-      <div class="favorite-item favorite-item--litter">
-        <div class="favorite-title">Maison de toilette et litière</div>
-      </div>
-      <div class="favorite-item favorite-item--sleeping">
-        <div class="favorite-title">Couchages et paniers</div>
-      </div>
-      <div class="favorite-item favorite-item--door">
-        <div class="favorite-title">niches et portes</div>
-      </div>
-      <div class="favorite-item favorite-item--treats">
-        <div class="favorite-title">Alimentation et friandises</div>
-      </div>
-    </div>
+    <ul class="favorite-items">
+      <li class="favorite-item favorite-item--food">
+        <a class="favorite-item-link" href="#"><div class="favorite-title">Alimentation</div></a>
+      </li>
+      <li class="favorite-item favorite-item--leash">
+        <a class="favorite-item-link" href="#"><div class="favorite-title">Colliers, laisses et harnais</div></a>
+      </li>
+      <li class="favorite-item favorite-item--litter">
+        <a class="favorite-item-link" href="#"><div class="favorite-title">Maison de toilette et litière</div></a>
+      </li>
+      <li class="favorite-item favorite-item--sleeping">
+        <a class="favorite-item-link" href="#"><div class="favorite-title">Couchages et paniers</div></a>
+      </li>
+      <li class="favorite-item favorite-item--door">
+        <a class="favorite-item-link" href="#"><div class="favorite-title">niches et portes</div></a>
+      </li>
+      <li class="favorite-item favorite-item--treats">
+        <a class="favorite-item-link" href="#"><div class="favorite-title">Alimentation et friandises</div></a>
+      </li>
+    </ul>
   </section>
 
   <footer class="footer">
