@@ -163,7 +163,8 @@ li {
   font-size: 1.125rem;
   font-weight: 700;
   color: #A4A4A4;
-  padding: 0.75rem 0 1rem 1.1875rem; }
+  padding: 0.75rem 0 1rem 1.1875rem;
+  outline: none; }
 
 .search-buttonContainer {
   display: flex; }
