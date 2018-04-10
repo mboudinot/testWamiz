@@ -388,12 +388,12 @@ body {
   font-weight: 700;
   margin: 0; }
 
-.footer-listItem:not(:last-child) {
-  padding-right: 0.5rem; }
+.footer-listItem:not(:first-child) {
+  padding-left: 0.5rem; }
 
-.footer-listItem:not(:last-child):after {
+.footer-listItem:not(:first-child):before {
   content: "-";
-  margin-left: 0.5rem; }
+  margin-right: 0.5rem; }
 
 @media only screen and (max-width: 600px) {
   .search,
@@ -478,4 +478,18 @@ body {
     width: 22.0625rem;
     height: 7.3125rem;
     background-size: contain;
-    margin-right: 1.3125rem; } }
+    margin-right: 1.3125rem; }
+  .footer {
+    padding: 1.25rem 0; }
+  .footer-title,
+  .footer-subtitle {
+    font-size: 0.875rem; }
+  .footer-subtitle {
+    padding-top: 1rem; }
+  .footer-socialNetwork {
+    margin: 1.6875rem 0 1.3125rem; }
+  .footer-links {
+    flex-wrap: wrap;
+    padding: 0 1.25rem; }
+  .footer-listItem.footer-listItem--contactUs:before {
+    content: ""; } }

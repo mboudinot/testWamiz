@@ -121,4 +121,34 @@
     background-size: contain;
     margin-right: (21 / 16) * 1rem;
   }
+
+  .footer {
+    padding: (20 / 16) * 1rem 0;
+  }
+
+  .footer-title,
+  .footer-subtitle {
+    font-size: (14 / 16) * 1rem;
+  }
+
+  .footer-subtitle {
+    padding-top: (16 / 16) * 1rem;
+  }
+
+  .footer-socialNetwork {
+    margin: (27 / 16) * 1rem 0 (21 / 16) * 1rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    padding: 0 (20 / 16) * 1rem;
+  }
+
+  .footer-listItem.footer-listItem--contactUs:before {
+    content: "";
+  }
+
+  // .footer-listItem:last-child:before {
+  //   content: "f";
+  // }
 }
