@@ -289,8 +289,9 @@ body {
   align-items: center;
   width: 23.125rem;
   height: 11.625rem;
-  border: 1px solid #000;
-  margin-bottom: 1.875rem; }
+  border: 1px solid #E5E5E5;
+  margin-bottom: 1.875rem;
+  border-radius: .2rem; }
 
 .favorite-item--food {
   background-image: url("../images/@1x/img_categorie_alimentation.png");
@@ -416,12 +417,65 @@ body {
   .category--reviews {
     padding: 2.0625rem 0.8125rem 0.6875rem 1.25rem;
     margin: 0; }
+  .category--favorite {
+    padding: 3.125rem 0.8125rem 0.6875rem 1.25rem;
+    margin: 0; }
   .category-header-title {
     font-size: 1.125rem; }
-  .slideshowContainer {
-    padding-left: 1.25rem; }
-  .slideshow {
+  .slideshowContainer,
+  .favorite-items {
+    padding: 0 1.25rem; }
+  .slideshow,
+  .favorite {
     overflow-x: auto; }
   .slideshow-item {
     width: 13.1875rem;
-    height: auto; } }
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 1.6875rem 0; }
+  .slideshowItem-logo {
+    display: block;
+    height: 9.375rem;
+    position: relative; }
+  .slideshowItem-logo img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .slideshowItem-reviews {
+    width: 100%;
+    margin: 0.5625rem 0 0; }
+  .reviews-score-item img {
+    width: 0.75rem; }
+  .reviews-reviewer {
+    font-size: 0.75rem;
+    margin-top: 0.8125rem; }
+  .reviews-product {
+    font-size: 1.125rem;
+    margin-top: 0.9375rem; }
+  .reviews-descriptive {
+    font-size: 0.875rem;
+    padding: 0.25rem 2rem;
+    overflow: hidden;
+    position: relative;
+    max-height: 6em; }
+  .reviews-descriptive:before {
+    content: '...';
+    position: absolute;
+    right: 1.9375rem;
+    bottom: -0.25rem; }
+  .favorite-items {
+    flex-wrap: nowrap; }
+  .favorite-item {
+    flex-shrink: 0;
+    width: 22.0625rem;
+    height: 7.3125rem;
+    background-size: contain;
+    margin-right: 1.3125rem; } }

@@ -16,8 +16,9 @@
   align-items: center;
   width: (370 / 16) * 1rem;
   height: (186 / 16) * 1rem;
-  border: 1px solid $color-black;
+  border: 1px solid $color-grey-favorite;
   margin-bottom: (30 / 16) * 1rem;
+  border-radius: .2rem;
 }
 
 .favorite-item--food {
