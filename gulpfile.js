@@ -40,7 +40,7 @@ gulp.task('buildJs', function (cb) {
 });
 
 gulp.task('minify-css',() => {
-  gulp.src(destinationCss + '/styles.scss')
+  gulp.src(destinationCss + '/styles.css')
     .pipe(cleanCSS())
     .pipe(gulp.dest(destinationCss));
 });
